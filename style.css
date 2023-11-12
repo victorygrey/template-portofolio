@@ -147,6 +147,12 @@ header .image img {
     margin: auto;
 }
 
+header .image a {
+    margin: auto;
+    /* align-items: center; */
+    font-size: 0.8rem;
+}
+
 section .header {
     margin-bottom: 1rem;
     color: #fff;
