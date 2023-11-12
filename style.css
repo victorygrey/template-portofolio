@@ -360,4 +360,15 @@ footer .column > a:hover {
 
     /* ini untuk lanjutan kodingan di tempat kerja */
     
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        grid-template-columns: 1fr, 200px;
+    }
 }
