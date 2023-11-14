@@ -147,6 +147,12 @@ header .image img {
     margin: auto;
 }
 
+header .image a {
+    margin: auto;
+    /* align-items: center; */
+    font-size: 0.8rem;
+}
+
 section .header {
     margin-bottom: 1rem;
     color: #fff;
@@ -356,5 +362,37 @@ footer .column > a:hover {
 
     header .image {
         grid-area: 1/1/2/2;
+    }
+
+    /* ini untuk lanjutan kodingan di tempat kerja */
+    
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        grid-template-columns: 1fr, 200px;
+    }
+}
+
+@media (width < 600px) {
+    header .image::before {
+        display: none;
+    }
+
+    .feature {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pricing {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer {
+        grid-template-columns: 1fr, 150px;
     }
 }
