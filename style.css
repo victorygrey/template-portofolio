@@ -114,7 +114,7 @@ header .content h1 {
     line-height: 4rem;
 }
 
-header.content h1 span {
+header .content h1 span {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #fff;
 }
