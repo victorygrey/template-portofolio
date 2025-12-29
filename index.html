@@ -1,159 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Faizal's modern web developer portfolio. Showcasing projects, skills, and experience in frontend, backend, and UI/UX design. Available for hire!" />
-    <meta name="keywords" content="web developer, portfolio, frontend, backend, javascript, react, nextjs, nodejs, UI/UX, Faizal" />
+    <meta name="description"
+        content="Faizal's modern web developer portfolio. Showcasing projects, skills, and experience in frontend, backend, and UI/UX design. Available for hire!" />
+    <meta name="keywords"
+        content="web developer, portfolio, frontend, backend, javascript, react, nextjs, nodejs, UI/UX, Faizal" />
     <meta name="author" content="Faizal" />
     <meta property="og:title" content="Faizal | Web Developer Portfolio" />
-    <meta property="og:description" content="Modern portfolio website of Faizal, web developer. Explore projects, skills, and contact info." />
+    <meta property="og:description"
+        content="Modern portfolio website of Faizal, web developer. Explore projects, skills, and contact info." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://your-github-username.github.io/template-portofolio/" />
     <meta property="og:image" content="img/banner.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Faizal | Web Developer Portfolio" />
-    <meta name="twitter:description" content="Modern portfolio website of Faizal, web developer. Explore projects, skills, and contact info." />
+    <meta name="twitter:description"
+        content="Modern portfolio website of Faizal, web developer. Explore projects, skills, and contact info." />
     <meta name="twitter:image" content="img/banner.png" />
     <link rel="icon" type="image/png" href="img/logo.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"
-      integrity="sha384-+b6Q3Z5+9k5X5Z5X5Z5X5Z5X5Z5X5Z5X5Z5X5Z5X5Z5X5Z5X5Z5X5Z5X5Z5"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"
+        integrity="sha384-+b6Q3Z5+9k5X5Z5X5Z5X5Z5X5Z5X5Z5X5Z5X5Z5X5Z5X5Z5X5Z5X5Z5X5Z5" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
     <title>Faizal | Web Developer Portfolio</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <nav class="navbar" aria-label="Main Navigation">
-        <div class="nav-logo">
-          <a href="#hero" aria-label="Back to Home"><img src="img/logo.png" alt="Faizal Logo" /></a>
-        </div>
-        <ul class="nav-links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button id="darkModeToggle" class="btn" aria-label="Toggle dark mode">
-          <i class="ri-moon-line" aria-hidden="true"></i>
-        </button>
-      </nav>
+        <nav class="navbar" aria-label="Main Navigation">
+            <div class="nav-logo">
+                <a href="#hero" aria-label="Back to Home"><img src="img/logo.png" alt="Faizal Logo" /></a>
+            </div>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button id="darkModeToggle" class="btn" aria-label="Toggle dark mode">
+                    <i class="ri-moon-line" aria-hidden="true"></i>
+                </button>
+                <button id="burgerMenu" class="burger-menu" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileNav">
+                    <span class="burger-bar"></span>
+                    <span class="burger-bar"></span>
+                    <span class="burger-bar"></span>
+                </button>
+            </nav>
+            <nav id="mobileNav" class="mobile-nav" aria-label="Mobile Navigation">
+                <button class="close-mobile-nav" aria-label="Close navigation menu">&times;</button>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </nav>
     </header>
 
     <section id="hero" class="container hero-section" aria-labelledby="hero-heading">
-      <div class="content">
-        <span class="blur" aria-hidden="true"></span>
-        <span class="blur" aria-hidden="true"></span>
-        <h1 id="hero-heading">Hi, I'm <span>Faizal</span></h1>
-        <h2 style="font-size:1.2rem;font-weight:400;">Web Developer & Problem Solver</h2>
-        <p>
-          Passionate about building impactful digital experiences. I specialize in modern web development, UI/UX, and scalable solutions.
-        </p>
-        <a href="#contact" class="btn">Hire Me</a>
-      </div>
-      <div class="image">
-        <img src="img/banner.png" alt="Banner illustration: web development" />
-        <small>
-          <a href="https://storyset.com/web" rel="noopener" target="_blank">Web illustrations by Storyset</a>
-        </small>
-      </div>
+        <div class="content">
+            <span class="blur" aria-hidden="true"></span>
+            <span class="blur" aria-hidden="true"></span>
+            <h1 id="hero-heading">Hi, I'm <span>Faizal</span></h1>
+            <h2 style="font-size: 1.2rem; font-weight: 400">
+                Web Developer & Problem Solver
+            </h2>
+            <p>
+                Passionate about building impactful digital experiences. I specialize
+                in modern web development, UI/UX, and scalable solutions.
+            </p>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+        <div class="image">
+            <img src="img/banner.png" alt="Banner illustration: web development" />
+            <small>
+                <a href="https://storyset.com/web" rel="noopener" target="_blank">Web illustrations by Storyset</a>
+            </small>
+        </div>
     </section>
 
     <section id="about" class="container about-section">
-      <h2>About Me</h2>
-      <p>
-        I am a passionate Web Developer with 3+ years of experience building modern, responsive, and accessible web applications. My expertise covers both frontend and backend, with a focus on delivering impactful digital solutions for businesses and users. I enjoy collaborating in teams, learning new technologies, and solving real-world problems through code.
-      </p>
+        <h2>About Me</h2>
+        <p>
+            I am a developer with a strong focus on website projects, Python programming, and desktop application development using Java. I enjoy building modern, responsive websites, automating tasks or data processing with Python, and creating efficient and user-friendly desktop applications with Java. I have always been passionate about learning new technologies and solving problems through programming.
+        </p>
     </section>
 
-    <section id="skills" class="container skills-section">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-          <li>HTML5, CSS3, JavaScript (ES6+), TypeScript</li>
-          <li>React, Next.js, Vue, SASS, Tailwind CSS</li>
-          <li>Node.js, Express, REST API, MongoDB, MySQL</li>
-          <li>UI/UX Design, Figma, Responsive Design</li>
-          <li>Git, GitHub, CI/CD, Agile Workflow</li>
-          <li>Testing: Jest, Cypress</li>
-        </ul>
-    </section>
+        <section id="skills" class="container skills-section">
+            <h2>Skills</h2>
+            <div style="overflow-x:auto;">
+                <table class="skills-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Technologies / Tools</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Website Development</td>
+                            <td>HTML5, CSS3, JavaScript, Bootstrap</td>
+                        </tr>
+                        <tr>
+                            <td>Python Programming</td>
+                            <td>Python (script, automation, data processing)</td>
+                        </tr>
+                        <tr>
+                            <td>Desktop Application</td>
+                            <td>Java (Swing, JavaFX)</td>
+                        </tr>
+                        <tr>
+                            <td>Tools</td>
+                            <td>Git, GitHub, VS Code, IntelliJ IDEA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
     <section id="projects" class="container projects-section">
         <h2>Projects</h2>
         <div class="projects-grid">
-          <div class="project-card">
-            <h3>Company Profile Website</h3>
-            <p>Developed a responsive company profile website for a logistics firm, featuring custom animations, SEO optimization, and a dynamic contact form. <br><b>Tech:</b> Next.js, Tailwind CSS, Node.js</p>
-            <a href="https://your-company-profile-demo.com" target="_blank">View Demo</a>
-          </div>
-          <div class="project-card">
-            <h3>Task Manager App</h3>
-            <p>Built a fullstack task management app with authentication, real-time updates, and analytics dashboard. <br><b>Tech:</b> React, Express, MongoDB</p>
-            <a href="https://your-task-manager-demo.com" target="_blank">View Demo</a>
-          </div>
-          <div class="project-card">
-            <h3>Personal Portfolio</h3>
-            <p>Modern portfolio website with dark mode, smooth animations, and project showcase. <br><b>Tech:</b> HTML, CSS, JavaScript</p>
-            <a href="https://your-portfolio-demo.com" target="_blank">View Demo</a>
-          </div>
+            <div class="project-card">
+                <h3>Company Profile Website</h3>
+                <p>
+                    Developed a responsive company profile website for a logistics firm,
+                    featuring custom animations, SEO optimization, and a dynamic contact
+                    form. <br /><b>Tech:</b> Next.js, Tailwind CSS, Node.js
+                </p>
+                <a href="https://your-company-profile-demo.com" target="_blank">View Demo</a>
+            </div>
+            <div class="project-card">
+                <h3>Task Manager App</h3>
+                <p>
+                    Built a fullstack task management app with authentication, real-time
+                    updates, and analytics dashboard. <br /><b>Tech:</b> React, Express,
+                    MongoDB
+                </p>
+                <a href="https://your-task-manager-demo.com" target="_blank">View Demo</a>
+            </div>
+            <div class="project-card">
+                <h3>Personal Portfolio</h3>
+                <p>
+                    Modern portfolio website with dark mode, smooth animations, and
+                    project showcase. <br /><b>Tech:</b> HTML, CSS, JavaScript
+                </p>
+                <a href="https://your-portfolio-demo.com" target="_blank">View Demo</a>
+            </div>
         </div>
     </section>
 
     <section id="experience" class="container experience-section">
         <h2>Experience</h2>
         <div class="experience-list">
-          <div class="experience-item">
-            <h4>Frontend Developer</h4>
-            <span>PT. Digital Kreatif | Jan 2024 - Nov 2024</span>
-            <p>Developed and maintained company website, implemented UI/UX improvements, and collaborated with cross-functional teams to deliver new features on time.</p>
-          </div>
-          <div class="experience-item">
-            <h4>Freelance Web Developer</h4>
-            <span>2023 - Present</span>
-            <p>Delivered custom web solutions for clients in various industries, including e-commerce, education, and creative portfolios. Focused on performance, accessibility, and maintainability.</p>
-          </div>
-          <div class="experience-item">
-            <h4>IT Support & Junior Web Developer</h4>
-            <span>Universitas Negeri | 2022 - 2023</span>
-            <p>Provided IT support and contributed to the development of internal web applications for academic and administrative needs.</p>
-          </div>
+            <div class="experience-item">
+                <h4>Frontend Developer</h4>
+                <span>PT. Digital Kreatif | Jan 2024 - Nov 2024</span>
+                <p>
+                    Developed and maintained company website, implemented UI/UX
+                    improvements, and collaborated with cross-functional teams to
+                    deliver new features on time.
+                </p>
+            </div>
+            <div class="experience-item">
+                <h4>Freelance Web Developer</h4>
+                <span>2023 - Present</span>
+                <p>
+                    Delivered custom web solutions for clients in various industries,
+                    including e-commerce, education, and creative portfolios. Focused on
+                    performance, accessibility, and maintainability.
+                </p>
+            </div>
+            <div class="experience-item">
+                <h4>IT Support & Junior Web Developer</h4>
+                <span>Universitas Negeri | 2022 - 2023</span>
+                <p>
+                    Provided IT support and contributed to the development of internal
+                    web applications for academic and administrative needs.
+                </p>
+            </div>
         </div>
     </section>
 
     <section id="contact" class="container contact-section">
         <h2>Contact</h2>
         <form class="contact-form" autocomplete="off">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="message" placeholder="Your Message" required></textarea>
-          <button type="submit" class="btn">Send Message</button>
-          <p style="margin-top:1rem;color:#aaa;font-size:0.95rem;">Or email me directly: <a href="mailto:faizal.dev@email.com" style="color:#1d4ed8;">faizal.dev@email.com</a></p>
-          <p style="color:#aaa;font-size:0.95rem;">LinkedIn: <a href="https://linkedin.com/in/your-linkedin" target="_blank" style="color:#1d4ed8;">linkedin.com/in/your-linkedin</a></p>
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+            <p style="margin-top: 1rem; color: #aaa; font-size: 0.95rem">
+                Or email me directly:
+                <a href="mailto:faizal.dev@email.com" style="color: #1d4ed8">faizal.dev@email.com</a>
+            </p>
+            <p style="color: #aaa; font-size: 0.95rem">
+                LinkedIn:
+                <a href="https://linkedin.com/in/your-linkedin" target="_blank"
+                    style="color: #1d4ed8">linkedin.com/in/your-linkedin</a>
+            </p>
         </form>
     </section>
 
     <footer class="container footer-section">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <img src="img/logo.png" alt="Logo" />
-          <p>Faizal &copy; 2025. All Rights Reserved.</p>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="img/logo.png" alt="Logo" />
+                <p>Faizal &copy; 2025. All Rights Reserved.</p>
+            </div>
+            <div class="footer-socials">
+                <a href="#" aria-label="YouTube"><i class="ri-youtube-line"></i></a>
+                <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                <a href="#" aria-label="Twitter"><i class="ri-twitter-line"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-line"></i></a>
+            </div>
         </div>
-        <div class="footer-socials">
-          <a href="#" aria-label="YouTube"><i class="ri-youtube-line"></i></a>
-          <a href="#" aria-label="Instagram"
-            ><i class="ri-instagram-line"></i
-          ></a>
-          <a href="#" aria-label="Twitter"><i class="ri-twitter-line"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-line"></i></a>
-        </div>
-      </div>
     </footer>
 
     <script src="script.js" defer></script>
-  </body>
+</body>
+
 </html>
